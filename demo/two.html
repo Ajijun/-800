@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		*{
+		    padding:0;
+		    margin:0;
+		}
+		.menu {
+		    width: 120px;
+		    background-color: #CCC;
+		    position: relative;
+		    height: 26px;
+		    margin:50px;
+		}
+		.menu .sub {
+		    position: absolute;
+		    display:none;
+		    left: 0px;
+		    top: 26px;
+		    background-color: #9CF;
+		    width: 100%;
+		}
+		.sub a{
+			 display:block;
+		}
+		</style>
+	<body>
+		<div class="menu">
+			<span class="btn">按钮</span>
+			<dl class="sub">
+				<dd><a href="">选项1</a></dd>
+				<dd><a href="">选项2</a></dd>
+				<dd><a href="">选项3</a></dd>
+			</dl>
+		</div>
+	</body>
+</html>
+<script src="jquery-1.11.1.js"></script>
+<script>
+	window.onclick = function(e){
+		var e = e || event;
+		var target = e.target || e.srcElement;
+		console.log(target)
+		if(target.className == "menu" || target.className == "sub" || target.className=="btn" || target.nodeName=="DD" || target.nodeName=="A" ){
+			$(".sub").slideToggle();			
+			return
+		}
+		$(".sub").slideUp()
+	}
+	$(".sub a").click(function(){
+		alert($(this).text())
+	})
+</script>
