@@ -55,7 +55,7 @@ $(".Img1 li p").fadeTo(0,0.7);
 // }
 // }
 // xun()
-
+// ----------------------------吸顶条---------------------
 $(function(){
     var flag = false;  //设置开关变量(判断是否正在运动)
     $(window).scroll(function(){  //window触发scroll事件
@@ -80,6 +80,23 @@ $(function(){
         }
     })
 })
+
+var aside = document.getElementsByName("aside");
+function getTop() {
+            var mytop = $(document).scrollTop();
+            if (mytop > 400) {
+                $("aside").css({
+                    'display': 'block',
+                    'top': 80,
+                });
+            } else {
+                $("aside").css('display', 'none');
+            }
+            setTimeout(getTop);
+        }
+    
+        getTop();
+  
 // 回到顶部--------------------------------------------
 function Stick(){
     $("figure .top").click(function(){

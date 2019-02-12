@@ -689,6 +689,7 @@ section>.top>.nav:nth-child(9) ul{
 section>.top>.Img3{
     width:100%;
     background:#f2f2f2;
+    border-bottom:3px solid #e60044;
 }
 section>.top>.Img3>.main{
     width:1200px;
@@ -785,8 +786,16 @@ section>.top>.Img3>.page .Right{
 section>.top>.Img3>.page ul .active{
     color:#e60044;
 }
-
-
+section .dibu{
+    width:1200px;
+    height:200px;
+    margin:0 auto;
+    margin-top:50px;
+}
+section .dibu ul{
+    display: flex;
+    justify-content: space-between;
+}
 /* 吸顶菜单-------------------- */
 article{
     width:100%;
@@ -1454,4 +1463,253 @@ figure .top:hover{
 }
 figure .top:hover span{
     display: block;
+}
+
+aside{
+    width:146px;
+    height:540px;
+    position:fixed;
+    top:80px;
+    left:180px;
+    z-index:100; 
+    background:#fff;
+    /* display:none; */
+}
+aside .header{
+    width:146px;
+    height:103px;
+}
+aside .header img{
+    display: block;
+    width:146px;
+    height:70px;
+}
+aside .header a{
+    color:#fff;
+    font-size:12px;
+}
+aside .header .boxa{
+    text-align: center;
+    width:120px;
+    height:25px;
+    background:#fe6a6a;
+    margin-top:5px;
+    margin-left:13px;
+}
+aside .boxa a:hover{
+    text-decoration: underline;
+}
+aside .section{
+    height:99px;
+    border-bottom: 1px solid #ccc;
+}
+aside .section li{
+    float:left;
+    
+}
+aside .section li a{
+    color:#666;
+    font-size:12px;
+}
+aside .section li a:hover{
+    color:#e60044;
+}
+aside .section ul{
+    padding:0 10px 0 13px;
+    width:127px;
+    height:100px;
+    
+}
+aside ul li{
+    display:block;
+    height:30px;
+    /* width:50%; */
+    line-height:30px;
+    padding:0 5px;
+    position: relative;
+    cursor: pointer;
+}
+aside .section ol{
+    margin:5px 0;
+    width:146px;
+    height:237px;
+    padding:5px  10px 0 13px;
+    /* margin-top:10px; */
+}
+aside .section ol li{
+   float: left;
+   width:50%;
+   line-height: 30px;
+   height:29px;
+   width:60px;
+}
+aside .section ol li a{
+    display: inline-block;
+    padding:0;
+    line-height: 19px;
+    position: relative;
+    font-size:12px;
+}
+aside .section ol li a i{
+    display: block;
+    float: left;
+    margin-right:4px;
+    height:20px;
+    width:20px;
+    background:url(../common/shouye_new_img.png) no-repeat;
+    line-height: 20px;
+}
+aside .section ol .nvzhuang a i{
+    background-position: -576px -48px;
+}
+aside .section ol .neiyi a i{
+    background-position: -639px -48px;
+}
+aside .section ol .nanzhuang a i{
+    background-position: -576px -77px;
+}
+aside .section ol .xiepin a i{
+    background-position: -639px -77px;
+}
+aside .section ol .ertong a i{
+    background-position: -576px -105px;
+}
+aside .section ol .muying a i{
+    background-position: -639px -105px;
+}
+aside .section ol .jiafang a i{
+    background-position: -576px -133px;
+}
+aside .section ol .jujia a i{
+    background-position: -639px -133px;
+}
+aside .section ol .meishi a i{
+    background-position: -576px -159px;
+}
+aside .section ol .yundong a i{
+    background-position: -639px -159px;
+}
+aside .section ol .jiadian a i{
+    background-position: -576px -189px;
+}
+aside .section ol .shuma a i{
+    background-position: -639px -189px;
+}
+aside .section ol .xiangbao a i{
+    background-position: -576px -216px;
+}
+aside .section ol .peishi a i{
+    background-position: -639px -216px;
+}
+aside .section ol .meizhuang a i{
+    background-position: -576px -244px;
+}
+aside .section ol .zhonglaonian a i{
+    background-position: -639px -244px;
+}
+/* ------------------------------------侧栏划过-------------------------- */
+aside .section ol .nvzhuang a:hover i{
+    background-position: -700px -5px;
+}
+aside .section ol .neiyi a:hover i{
+    background-position: -763px -5px;
+}
+aside .section ol .nanzhuang a:hover i{
+    background-position: -700px -34px;
+}
+aside .section ol .xiepin a:hover i{
+    background-position: -763px -34px;
+}
+aside .section ol .ertong a:hover i{
+    background-position: -700px -62px;
+}
+aside .section ol .muying a:hover i{
+    background-position: -763px -62px;
+}
+aside .section ol .jiafang a:hover i{
+    background-position: -700px -90px;
+}
+aside .section ol .jujia a:hover i{
+    background-position: -763px -90px;
+}
+aside .section ol .meishi a:hover i{
+    background-position: -700px -116px;
+}
+aside .section ol .yundong a:hover i{
+    background-position: -763px -116px;
+}
+aside .section ol .jiadian a:hover i{
+    background-position: -700px -146px;
+}
+aside .section ol .shuma a:hover i{
+    background-position: -763px -146px;
+}
+aside .section ol .xiangbao a:hover i{
+    background-position: -700px -173px;
+}
+aside .section ol .peishi a:hover i{
+    background-position: -763px -173px;
+}
+aside .section ol .meizhuang a:hover i{
+    background-position: -700px -200px;
+}
+aside .section ol .zhonglaonian a:hover i{
+    background-position: -763px -200px;
+}
+ 
+/* ------------侧栏input框------------- */
+aside form{
+    display:block;
+    padding-left:17px;
+    margin-bottom:10px;
+}
+aside form .sd_txt{
+    width:73px;
+    background:#fff;
+    height:24px;
+    line-height: 20px;
+    border:1px solid #e5e5e5;
+    padding:1px 5px;
+    border-right:0;
+    outline:0;
+}
+aside form .sd_smt{
+    width:28px;
+    height:28px;
+    background:url(../common/shouye_new_img.png) no-repeat #fff center;
+    display: inline-block;
+    vertical-align: bottom;
+    background-position: -313px -201px;
+    margin-left:-5px;
+}
+
+aside .footer{
+    border-top:1px solid #f0f0f0;
+    padding:10px 2px;
+    text-align: center;
+    
+}
+aside .footer ul{
+    padding:0 10px 0 13px;
+    overflow: hidden;
+    height:29px;
+    line-height: 29px;
+
+}
+aside .footer ul li{
+    margin:0 10px;
+    float:left;
+    line-height:30px;
+    padding:0;
+    
+}
+aside .footer ul li a{
+    color:#666;
+    font-size:12px;
+}
+aside .footer ul em{
+    font-style: normal;
+    color:#ccc;
+    display: block;
+    float: left;
 }
