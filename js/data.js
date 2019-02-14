@@ -4,7 +4,7 @@
 	var right = document.getElementById("Right");
 	var page = document.getElementById("u");
 	var index = 1;// index代表页码  默认第一页
-	var num = 40;//每页显示4条数据
+	var num = 40;//每页显示40条数据
 	var total = null;
 	function showData() {
         getAjax("../js/updated.json",function(msg) {

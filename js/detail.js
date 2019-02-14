@@ -94,4 +94,71 @@ window.onload=function(){
 			$(".right").html(str);
 		}
     })
+	//利用时间委托   加入购物车把这个商品的id name price src 都存进cookie
+		 var arr = [];
+		 $(".right").on('click','button',function(){
+			 var flag = true;
+			 var obj = {//即将加入购物车的信息
+				 id : $(this).attr('pid'),
+				 min : $(this).attr('name'),
+				 prise:$(this).attr('price'),
+				 ig:$(this).attr('src'),
+				 color:$(this).attr('color'),
+				 count :1
+			 }
+			 var cookieInfor = getCookie("shopList");
+			 if(cookieInfor.length != 0){
+				 arr = cookieInfor;
+				 for(var i = 0;i< arr.length;i++){
+					 if(arr[i].id == obj.id){
+						 arr[i].count++;
+						 flag = false;
+					 }
+				 }
+			 }
+			 if(flag){
+				 arr.push(obj)
+			 }
+	
+			 setCookie("shopList",JSON.stringify(arr));
+			 if(!confirm("确定-继续购物, 取消-去购物车结算")){
+				 window.location.href = "douwuche.html"
+			 }
+		 })
 }
+
+function TabChange(){
+	this.tabs = document.getElementById("bottom1").children;
+	this.con = document.getElementById("big").children;
+	
+	this.init = function(){
+		for(let i = 0 ;i< this.tabs.length;i++){
+			this.tabs[i].onmouseover = function(){
+				this.clearAll();
+
+				this.change(i);
+			}.bind(this)
+		}
+	}
+
+	this.clearAll = function(){
+		for(var i = 0;i< this.tabs.length;i++){
+			this.tabs[i].className = "";
+			this.con[i].className = "";
+		}
+	}
+	this.change = function(index){
+		this.tabs[index].className = "purple";
+		this.con[index].className = "show";
+	}
+}
+var res = new TabChange();
+res.init();
+
+
+// $("#small li").mouseover(function(){
+// 	var index = $(this).index();
+// 	$("#big img").eq(index).show().siblings("img").hide();
+// })
+
+
