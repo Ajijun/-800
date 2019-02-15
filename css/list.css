@@ -1,20 +1,22 @@
-*{
-    margin:0;
-    padding:0;
+ul,li,ol,p,body,dl,dt,dd,tr,td,h1,h2,h3,h4,h5,h6{
+	margin:0;padding:0;
 }
-a{
-    text-decoration: none;
+body,html{
+	font-size:14px;
+	font-family:"微软雅黑";
+	background:#fff;
 }
-li{
-    list-style: none;
+ul,li,ol{
+	list-style:none;
 }
-img{
-    vertical-align: middle;
-    border:0;
+a,s,u{
+	text-decoration:none;
+	color:#333;
 }
-html,body{
-    height:100%;
-}
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
+
+/* div[id]{width:1100px;margin:0 auto;} */
+img{border: none;}
 
 
 header{
@@ -160,11 +162,11 @@ nav>ul>li{
     line-height: 40px;
     position: relative;
 }
-nav>ul>li:nth-child(1){
+nav>ul>li:nth-child(7){
     padding:0 60px;
     background:#e60044;
 }
-nav>ul>li:nth-child(1)>a{
+nav>ul>li:nth-child(7)>a{
     color:#fff; 
 }
 nav>ul>li>a{
@@ -193,117 +195,35 @@ nav>ul>li:last-child:hover>img{
     z-index:11;
 }
 
+.list_wrap{width: 100%;background: #f6f6f6;overflow: hidden;border-bottom: 2px solid #c90000;}
+.list_wrap .banner_list{width: 1198px;height: 38px;border: 1px solid #f2f2f2;margin: 0 auto;margin-top: 20px;margin-bottom: 30px;background: #fff;}
+.list_wrap .banner_list a{line-height:38px;margin-left: 10px;color: #666;}
+.list_wrap .banner_list a:first-child{color: #c90000;font-weight: bold;}
+.list_wrap .banner_list a:hover{color: #c90000;}
 
-.Img3{
-    width:100%;
-    background:#f2f2f2;
-    border-bottom:3px solid #e60044;
-}
-.Img3>.main{
-    width:1200px;
-    margin:0 auto;
-}
-.Img3>.main>ul{
-    overflow: hidden;
-}
-.Img3>.main>ul>li{
-    width:280px;
-    height:345px;
-    margin-right:26px;
-    margin-bottom:20px;
-    float:left;
-}
-.Img3>.main>ul>li:nth-child(4n){
-    margin-right:0;
-}
-.Img3>.main>ul li img{
-    width:280px;
-    height:280px;
-    display: block;
-}
-.Img3>.main>ul li div{
-    width:280px;
-    height:65px;
-    background:#fff;
-}
-.Img3>.main>ul li>div>b{
-    font-size:12px;
-    color:#999;
-    line-height:32px;
-    margin-left:5px;
-}
-.Img3>.main>ul li>div>b>a{
-    font-size:12px;
-    color:#666;
-    margin-right:95px;
-    font-weight: 300;
-}
-.Img3>.main>ul li>div>b>a:hover{
-    text-decoration: underline;
-}
-.Img3>.main>ul li>div>h3{
-    color:#e60044;
-    font-size:16px;
-    font-weight:400;
-    float:left;
-    line-height: 32px;
-    margin-left:5px;
-}
-.Img3>.main>ul li>div>a{
-    color:#999;
-    font-size:12px;
-    float:right;
-    margin-top:10px;
-    margin-right:5px;
-}
-.Img3>.main>ul li>div>a:hover{
-    color:#e60044;
-}
-.Img3>.page{
-    width:400px;
-    height:50px;
-    margin:0 auto;
-}
-.Img3>.page .Left{
-    width:30px;
-    height:30px;
-    float:left;
-    margin-left:10px;
-    display:block;
-    background:url(../common/index-common.png) no-repeat 0 -90px; 
-}
-.Img3>.page ul li{
-    float:left;
-    margin:5px 20px;
-    color:#999;
-    cursor:pointer;
-}
-.Img3>.main ul li:hover{
-    box-shadow:10px 0 10px 3px #ccc,-10px 0 5px 3px #ccc;
-}
-.Img3>.page ul li:hover{
-    color:#e60044;
-}
-.Img3>.page .Right{
-    width:30px;
-    height:30px;
-    float:left;
-    display:block;
-    background:url(../common/index-common.png) no-repeat -46px -90px; 
-}
-.Img3>.page ul .active{
-    color:#e60044;
-}
- .dibu{
-    width:1200px;
-    height:200px;
-    margin:0 auto;
-    margin-top:50px;
-}
- .dibu ul{
-    display: flex;
-    justify-content: space-between;
-}
+
+.list_wrap .main{width: 1200px;margin: 0 auto;}
+.list_wrap .main_list li{float: left;width: 286px;height: 395px;margin-right: 15px;margin-bottom: 15px;background: #fff;border: 1px solid transparent;}
+.list_wrap .main_list li:hover{border: 1px solid #c90000;}
+.list_wrap .main_list li:nth-child(4n){margin-right: 0;}
+.list_wrap .main_list li a{display: block;}
+.list_wrap .main_list li a img{width: 286px;display: block;}
+.list_wrap .main_list li a p{width: 270px;height: 30px;margin: 0 auto;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.list_wrap .main_list li a p:nth-of-type(1){border-bottom: 1px solid #f2f2f2;line-height: 30px;}
+.list_wrap .main_list li a p:nth-of-type(2){text-align: center;margin-top: 5px;}
+.list_wrap .main_list li a p:nth-of-type(2) span{font-size: 16px;color: #c7000b;}
+.list_wrap .main_list li a p:nth-of-type(2) b{color: #c90000;font-size: 27px;}
+.list_wrap .main_list li a p:nth-of-type(2) i{font-style: normal;font-size: 10px;color: #c1c1c1;text-decoration: line-through;}
+.list_wrap .main_list li a p:nth-of-type(3){text-align: center;line-height: 30px;margin-top: 10px;color: #c1c1c1;font-size: 12px;}
+.list_wrap .main_list li a p:nth-of-type(3) span{color: #69b200;}
+
+.list_wrap .main .page_down{width: 350px;height: 40px;margin:20px auto;display: flex;justify-content: space-between;margin-bottom: 30px;margin-top: 30px;}
+.list_wrap .main .page_down span{display: inline-block;width: 30px;height: 30px;background: #fff;margin-top: 5px;border-radius: 5px;cursor: pointer;border: 1px solid #ccc;}
+.list_wrap .main .page_down span img{display: block;margin-top: 3px;}
+.list_wrap .main .page_down ul{width: 230px;height: 30px;margin-top: 5px;display: flex;justify-content: space-between;}
+.list_wrap .main .page_down ul li{width: 30px;height: 30px;background: #fff;text-align: center;line-height: 30px;cursor: pointer;color: #999;border-radius: 5px;border: 1px solid #ccc;}
+.list_wrap .main .page_down .u li.active{color: #fff;background: #ff404c;}
+
 
 footer{
     width:100%;
@@ -500,3 +420,386 @@ footer .bot .ico a:nth-child(2n) img{
     height:30px;
     margin:0 7px;
 }
+
+/* 吸顶菜单 */
+.ceiling{width: 100%;height: 82px;position: fixed;top:-84px;left: 0;background: #fff;border: 1px solid #ccc;z-index: 990;}
+/* .ceiling dl{background: olive;} */
+.ceiling dl dt a{font-weight: bold;color: #ea0401;}
+.ceiling dl a{line-height: 30px;}
+.ceiling dl dd a{color: #635f5c;}
+.ceiling dl dd a:hover{color: #ea0401;}
+.ceiling .ceiling_top{width: 1200px;height: 40px;margin: 0 auto;display: flex;justify-content: space-between;}
+.ceiling .ceiling_top dl{width: 755px;height: 30px;display: flex;justify-content: space-between;margin-top: 5px;}
+.ceiling .ceiling_top .ceiling_search{width: 210px;height: 29px;margin-top: 5px;display: flex;}
+.ceiling .ceiling_top .ceiling_search input{width: 120px;height: 25px;padding-left: 5px;border: 1px solid #ea0401;outline: none;border-right: none;}
+.ceiling .ceiling_top .ceiling_search span{display: inline-block;width:90px;height: 100%;background: url(../img/common/index-common.png) no-repeat -189px top;}
+.ceiling em{display: block;width: 100%;height: 2px;background: #ea0401;}
+.ceiling .ceiling_bottom{width: 1200px;height: 40px;margin: 0 auto;}
+.ceiling .ceiling_bottom dl{width: 700px;height: 30px;display: flex;justify-content: space-between;margin-top: 5px;}
+
+
+/* 右边侧栏 */
+figure{
+    height:100%;
+    width:35px;
+    position: fixed;
+    top:0;
+    right:0;
+    background:#000;
+	z-index: 100;
+	margin:0;
+}
+figure p{
+    text-align: center;
+}
+figure .one{
+    width:35px;
+    height:130px;
+}
+figure .one p:nth-child(1){
+    width:22px;
+    height:22px;
+    display:block;
+    margin:0 auto;
+    margin-top:15px;
+    background:url(../common/sidebar_cart.png) no-repeat;
+}
+figure .one p:nth-child(2){
+    font-size:18px;
+    color:#fff;
+}
+figure .one p:nth-child(3){
+    display: block;
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    background:#e60044;
+    font-size:18px;
+    color:#fff;
+    text-align: center;
+    line-height: 20px;
+    margin:10px auto;  
+
+}
+figure .one:hover {
+    background:#e60044;
+}
+figure .one:hover p:nth-child(3){
+    background:#fff;
+    color:#e60044;
+}
+figure div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:35px;
+    height:750px;
+}
+figure ul{
+    position: relative;
+    width:35px;
+    height:168px;
+    /* background:#fff; */
+}
+figure ul li{
+    width:35px;
+    height:40px;
+    overflow: hidden;
+}
+figure ul li:nth-child(1) p{
+    display: block;
+    width:22px;
+    height:22px;
+    margin:0 auto;
+    /* margin-top:20px; */
+    line-height: 40px;
+    margin-top:9px;
+    background:url(../common/side_golds.png) no-repeat 0 -200px;
+}
+figure ul li:nth-child(2) p{
+    display: block;
+    width:22px;
+    height:22px;
+    margin:0 auto;
+    line-height: 40px;
+    margin-top:9px;
+    background:url(../common/quan_iconnew.png) no-repeat;
+}
+figure ul li:nth-child(3) p{
+    display: block;
+    width:22px;
+    height:22px;
+    margin:0 auto;
+    line-height: 40px;
+    margin-top:9px;
+    background:url(../common/myFavorites.png) no-repeat;
+}
+figure ul li:nth-child(4) p{
+    display: block;
+    width:22px;
+    height:22px;
+    margin:0 auto;
+    line-height: 40px;
+    margin-top:11px;
+    background:url(../common/side_golds.png) no-repeat -4px -242px;
+}
+/* figure ul li span{
+    width:82px;
+    height:22px;
+    background:#e60044;
+    text-align: center;
+    line-height: 22px;
+    color:#fff;
+    position: absolute;
+} */
+figure ul li:nth-child(1) span{
+    width:100px;
+    height:40px;
+    background:#e60044;
+    text-align: center;
+    line-height: 40px;
+    color:#fff;
+    position: absolute;
+    left:-100px;
+    top:0;
+    display: none;
+}
+figure ul li:nth-child(2) span{
+    width:100px;
+    height:40px;
+    background:#e60044;
+    text-align: center;
+    line-height: 40px;
+    color:#fff;
+    position: absolute;
+    left:-100px;
+    top:40px;
+    display: none;
+}
+figure ul li:nth-child(3) span{
+    width:100px;
+    height:40px;
+    background:#e60044;
+    text-align: center;
+    line-height: 40px;
+    color:#fff;
+    position: absolute;
+    left:-100px;
+    top:80px;
+    display: none;
+}
+figure ul li:nth-child(4) span{
+    width:100px;
+    height:40px;
+    background:#e60044;
+    text-align: center;
+    line-height: 40px;
+    color:#fff;
+    position: absolute;
+    left:-100px;
+    top:120px;
+    display: none;
+}
+figure ul li:nth-child(1):hover{
+    background:#e60044;
+}
+figure ul li:nth-child(1):hover span{
+    display: block;
+}
+figure ul li:nth-child(2):hover{
+    background:#e60044;
+}
+figure ul li:nth-child(2):hover span{
+    display: block;
+}
+figure ul li:nth-child(3):hover{
+    background:#e60044;
+}
+figure ul li:nth-child(3):hover span{
+    display: block;
+}
+figure ul li:nth-child(4):hover{
+    background:#e60044;
+}
+figure ul li:nth-child(4):hover span{
+    display: block;
+}
+
+
+figure ol{
+    width:35px;
+    height:200px;
+    position: relative;
+    bottom:50px;
+    left:0;
+    /* background:#fff; */
+}
+figure ol li{
+    width:35px;
+    height:40px;
+    overflow: hidden;
+}
+figure ol li:nth-child(1) p{
+    display: block;
+    width:22px;
+    height:22px;
+    margin:0 auto;
+    /* margin-top:20px; */
+    line-height: 40px;
+    padding-top:10px;
+    background:url(../common/sidePanel_checkin1N.gif) no-repeat -7px;
+}
+figure ol li:nth-child(1) span{
+    width:120px;
+    height:40px;
+    background:#e60044;
+    text-align: center;
+    line-height: 20px;
+    color:#fff;
+    position: absolute;
+    left:-120px;
+    top:0px;
+    font-size:12px;
+    display: none;
+}
+figure ol li:nth-child(2) p{
+    display: block;
+    width:22px;
+    height:22px;
+    margin:0 auto;
+    /* margin-top:20px; */
+    line-height: 40px;
+    margin-top:9px;
+    background:url(../common/sidePanelIconsNew.png) no-repeat -394px -11px;
+}
+figure ol li:nth-child(2) span{
+    width:120px;
+    height:40px;
+    background:#e60044;
+    text-align: center;
+    /* line-height: 40px; */
+    color:#fff;
+    position: absolute;
+    left:-120px;
+    top:40px;
+    font-size:12px;
+    display: none;
+}
+figure ol li span a{
+    display: inline-block;
+    height:20px;
+    margin-top:10px;
+    /* width:10px; */
+    border:1px solid #fff;
+    border-radius: 5px;
+    margin-left:5px;
+    cursor: pointer;
+}
+figure ol li span a:last-child{
+    background: #fff;
+    color:#e60044;
+}
+figure ol li span a:active{
+    background:#fff;
+    color:#e60044;
+}
+figure ol li:nth-child(3) p{
+    display: block;
+    width:22px;
+    height:22px;
+    margin:0 auto;
+    /* margin-top:20px; */
+    line-height: 40px;
+    margin-top:9px;
+    background:url(../common/sidePanelIconsNew.png) no-repeat -276px -11px;
+}
+figure ol li:nth-child(3) span{
+    background:url(../common/side_two_dimension.png);
+    width:104px;
+    height:156px;
+    position: absolute;
+    left:-104px;
+    top:80px;
+    font-size:12px;
+    display: none;
+}
+figure ol li:nth-child(4) p{
+    display: block;
+    width:22px;
+    height:22px;
+    margin:0 auto;
+    /* margin-top:20px; */
+    line-height: 40px;
+    margin-top:9px;
+    background:url(../common/sidePanelIconsNew.png) no-repeat -339px -11px;
+}
+figure ol li:nth-child(4) span{
+    width:120px;
+    height:40px;
+    background:#e60044;
+    text-align: center;
+    line-height: 40px;
+    color:#fff;
+    position: absolute;
+    left:-120px;
+    top:120px;
+    font-size:12px;
+    display: none;
+}
+figure ol li:nth-child(5) p{
+    display: block;
+    width:22px;
+    height:22px;
+    margin:0 auto;
+    /* margin-top:20px; */
+    line-height: 40px;
+    margin-top:9px;
+    background:url(../common/sidePanelIconsNew.png) no-repeat -510px -11px;
+}
+figure ol li:nth-child(5) span{
+    width:120px;
+    height:40px;
+    background:#e60044;
+    text-align: center;
+    line-height: 40px;
+    color:#fff;
+    position: absolute;
+    left:-120px;
+    top:160px;
+    font-size:12px;
+    display: none;
+}
+figure ol li:nth-child(1):hover{
+    background:#e60044;
+}
+figure ol li:nth-child(1):hover p{
+    background:url(../common/side_golds.png) no-repeat -7px -48px;
+}
+figure ol li:nth-child(1):hover span{
+    display: block;
+}
+figure ol li:nth-child(2):hover{
+    background:#e60044;
+}
+figure ol li:nth-child(2):hover span{
+    display: block;
+}
+figure ol li:nth-child(3):hover{
+    background:#e60044;
+}
+figure ol li:nth-child(3):hover span{
+    display: block;
+}
+figure ol li:nth-child(4):hover{
+    background:#e60044;
+}
+figure ol li:nth-child(4):hover span{
+    display: block;
+}
+figure ol li:nth-child(5):hover{
+    background:#e60044;
+}
+figure ol li:nth-child(5):hover span{
+    display: block;
+}
+

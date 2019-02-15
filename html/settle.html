@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>结算页面</title>
+    <link rel="stylesheet" href="../css/settle.css">
+</head>
+<body>
+    <!-- header部分 -->
+    <header>
+        <div class="header">
+            <ul>
+                <li><a href="#">团800旗下网站</a></li>
+                <li>|</li>
+                <li><a href="#">QQ登录</a></li>
+                <li>|</li>
+                <li><a href="login.html">登录</a><a href="register.html">免费注册</a></li>
+                <li>|</li>
+                <li><a href="#">我的订单</a></li>
+                <li>|</li>
+                <li><a href="#"><img src="../common/head_cart.png">购物车<span id="header_count"></span></a></li>
+                <li>|</li>
+                <li><a href="#">帮助中心</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="progress">
+        <a href=""><img src="../images/settle/logo20172x.png" alt=""></a>
+        <img src="../images/settle/step.ff09f3d1.png" alt="">
+    </div>
+    <div class="note">
+        <div class="note_left">
+            <span>购物车</span><b>0</b><em></em>
+        </div>
+        <img src="../images/settle/new_icon1.7d56c951.png" alt="">
+    </div>
+    <section>
+        <div class="sect_main">
+            <div class="sect_top">
+                <a href=""><input type="checkbox" id="qx">全选</a>
+                <span>商品</span>
+                <span>单价(元)</span>
+                <span>数量</span>
+                <span>金额</span>
+                <span>操作</span>
+            </div>
+            <ul class="shoplist"> 
+                <!-- <li class="shopitem">
+                    <a href=""><input type="checkbox"></a>
+                    <a href=""><img src="img/details/big1.jpg" alt=""></a>
+                    <a href=""><span>春秋新款韩版运动鞋女鞋跑步鞋百搭小白鞋学生休闲鞋透气单鞋</span><br><i>7</i></a>
+                    <a href="">
+                        <span>颜色：9189樱桃粉</span><br>
+                        <span>尺码：M</span>
+                    </a>
+                    <a href="">
+                        <span>29.00</span><br>
+                        <span>89.00</span>
+                    </a>
+                    <a href="">
+                        <em>-</em>
+                        <span class="shopcount">1</span>
+                        <em>+</em>
+                    </a>
+                    <a href=""><b class="sumPrice">29.00</b></a>
+                    <span>
+                        <a href="">删除</a><br>
+                        <a href="">移入收藏</a>
+                    </span>
+                </li> -->
+                
+            </ul>
+            <div class="countall">
+                <div class="count_left">
+                    <a href="javascript:;"><input type="checkbox" class="qxdel">全选</a>
+                    <a href="javascript:;" class="delmass">批量删除</a>
+                </div>
+                <div class="count_right">
+                        <button>结算</button>
+                        <span>总计(不含运费)：<b class="pay">￥0.00</b></span>
+                        <span>共<em class="sumCount"></em>件</span>
+                </div>
+
+            </div>
+            <div class="maybe">
+                <h3>您可能还需要</h3>
+                <ul class="maybelist">
+                    <!-- <li>
+                        <a href="">
+                           <img src="//z3.tuanimg.com/imagev2/trade/800x800.8bd973d9e9228fee7aba15d1193c02a0.180x180.jpg.webp" alt=""> 
+                           <p>酒鬼花生*1兰花豆*1</p>
+                           <p><span>￥13.5</span><span>新品上架</span></p>
+                        </a>
+                    </li>  -->
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="top">
+            <ul>
+                <li>
+                    <span></span>
+                    <dl>
+                        <dd>关于我们</dd>
+                        <dt><a href="#">关于我们</a></dt>
+                        <dt><a href="#">网站服务条款</a></dt>
+                        <dt><a href="#">用户服务协议</a></dt>
+                        <dt><a href="#">联系我们</a></dt>
+                        <dt><a href="#">隐私政策</a></dt>
+                    </dl>
+                </li>
+                <li>
+                    <span></span>
+                    <dl>
+                        <dd>购物指南</dd>
+                        <dt><a href="#">新手玩转折800</a></dt>
+                        <dt><a href="#">订单查询</a></dt>
+                        <dt><a href="#">会员介绍</a></dt>
+                        <dt><a href="#">积分攻略</a></dt>
+                        <dt><a href="#">帮助中心</a></dt>
+                    </dl>
+                </li>
+                <li>
+                    <span></span>
+                    <dl>
+                        <dd>消费者保障</dd>
+                        <dt><a href="#">食品抽检</a></dt>
+                        <dt><a href="#">退货退款政策</a></dt>
+                        <dt><a href="#">运费补贴卡</a></dt>
+                        <dt><a href="#">无忧售后</a></dt>
+                        <dt><a href="#">先行赔付</a></dt>
+                    </dl>
+                </li>
+                <li>
+                    <span></span>
+                    <dl>
+                        <dd>商务合作</dd>
+                        <dt><a href="#">商家报名</a></dt>
+                        <dt><a href="#">友情链接</a></dt>
+                        <dt><a href="#">廉政举报</a></dt>
+                    </dl>
+                </li>
+                <li>
+                    <span></span>
+                    <dl>
+                        <dd>下次怎么来?</dd>
+                        <dt>记住域名:<a href="#"><i>zhe800.com</i></a></dt>
+                        <dt>百度搜索:<a href="#"><i>折800</i></a></dt>
+                        <dt>下载桌面快捷方式</dt>
+                        <dt>收藏本站:<a href="#">加入收藏</a></dt>
+                        <dt>订阅本站:</dt>
+                        <input type="text" value="输入您的邮件">
+                        <span>订阅</span>
+                    </dl>
+                </li>
+                <li>
+                    <span><img src="../images/footer_code.png"/></span>
+                    <p>下载登录手机端App</p>
+                </li>
+            </ul>
+        </div>
+        <div class="link">
+            <div>
+                <span>友情链接:</span>
+                <div id="Odiv">
+                    <ul id="box">
+                        <li id="list">
+                            <a href="#">卡宝宝信用卡</a>
+                            <a href="#">券妈妈优惠券</a>
+                            <a href="#">酷价</a>
+                            <a href="#">千图网</a>
+                            <a href="#">火车票</a>
+                            <a href="#">中商情报网</a>
+                            <a href="#">法律咨询</a>
+                            <a href="#">深圳地图</a>
+                        </li>
+                        <li>
+                            <a href="#">网贷导航</a>
+                            <a href="#">名鞋库</a>
+                            <a href="#">万表网</a>
+                            <a href="#">114票务网</a>
+                            <a href="#">亲宝网</a>
+                            <a href="#">中国丽人网</a>
+                            <a href="#">慧聪网</a>
+                            <a href="#">亿邦动力网</a>
+                        </li>
+                        <li>
+                            <a href="#">大豆网</a>
+                            <a href="#">时尚品牌网</a>
+                            <a href="#">家具网</a>
+                            <a href="#">移动版</a>
+                            <a href="#">摇篮网</a>
+                        </li>
+                        <li>
+                            <a href="#">卡宝宝信用卡</a>
+                            <a href="#">券妈妈优惠券</a>
+                            <a href="#">酷价</a>
+                            <a href="#">千图网</a>
+                            <a href="#">火车票</a>
+                            <a href="#">中商情报网</a>
+                            <a href="#">法律咨询</a>
+                            <a href="#">深圳地图</a>
+                        </li>
+                    </ul>
+                </div>
+                <span>更多>></span>
+            </div>
+        </div>
+        <div class="bot">
+            <ul>
+                <li><a>京ICP证120075号</a></li>
+                <li>京ICP备10051110号-5</li>
+                <li><a>京公网安备号1101502025623</a></li>
+                <li>统一社会信用代码91110105571298269B</li>
+                <li>食品流通许可证SP1101051510352397</li>
+            </ul>
+            <p>出版物经营许可证 新出发零字第期朝160018号  Copyright&copy;2011-2015 版权所有 ZHE800.COM</p>
+            <p>团博百众(北京)科技有限公司,地址:北京市朝阳区裕民路12号1号楼A座201,电话 400-0611-800</p>
+            <div class="ico">
+                <a><img src="../images/hui.jpg"/></a>
+                <a><img src="../images/cert.png"></a>
+                <a><img src="../images/gsrz-icon.jpg"/></a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../js/jquery-1.11.1.js"></script>
+<script src="../js/ajax.js"></script>
+<script src="../js/public.js"></script>
+<script src="../js/cookie.js"></script>
+<script src="../js/settle.js"></script>
+</html>

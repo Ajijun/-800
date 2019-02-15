@@ -46,11 +46,11 @@
             </div> 
             <div>
                 <span></span>
-                <input type="text" name="uname" placeholder="邮箱/手机号/用户名">
+                <input type="text" name="uname" id="uname" placeholder="邮箱/手机号/用户名">
             </div>
             <div>
                 <span></span>
-                <input type="password" name="pwd" placeholder="请输入密码">
+                <input type="password" name="pwd"  id="upwd" placeholder="请输入密码">
             </div>
             <div class="verify-wrap" id="verify-wrap2"></div>
             <button class="btn" id="btn">登录</button>
@@ -87,3 +87,31 @@
 <!-- <script src="../js/jquery-1.11.1.js"></script> -->
 <script src="../js/jq-slideVerify.js"></script>
 <script src="../js/register.js"></script>
+<script>
+    var uname = document.getElementById("uname");
+    var upwd = document.getElementById("upwd");
+    var btn = document.getElementById("btn");
+    btn.click = function(){
+        var name = uname.value;
+        var pwd = upwd.value;
+        if(name == "" || pwd == ""){
+            return;
+        }
+        var xhr = new XMLHttpRequest();
+        xhr.open("get","register.php?uname="+name+"&upwd="+pwd,true);
+        xhr.send();
+        xhr.onreadystatechange = function(){
+            if(xhr.readyState==4 && xhr.status == 200){
+                var res = xhr.responseText;
+                if(res == 1){
+                    alert("登录成功");
+                    window.location.href  = "index.html";
+                }else if(res==2){
+                    alert("密码不正确")
+                }else{
+                    alert('用户名不存在;请重新输入')
+                }
+            }
+        }
+    }
+</script>

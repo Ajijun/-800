@@ -19,9 +19,9 @@
     </header>
     <section>
         <div class="left">
-           <span>手机号:</span><input type="text" placeholder="   手机号码"><br>
-           <span>密码:</span><input type="password" ><br>
-           <span>确认密码:</span><input type="password"><br>
+           <span>手机号:</span><input type="text" id="box1" placeholder="   手机号码"><br>
+           <span>密码:</span><input type="password" id="box2"><br>
+           <span>确认密码:</span><input type="password" id="box3"><br>
            <!-- <div class="verify-wrap2" id="verify-wrap2"></div> -->
             <span></span><div class="verify-wrap" id="verify-wrap2"></div><br>
            <span>验证码:</span><input type="text">
@@ -61,3 +61,34 @@
 <script src="../js/jquery-2.1.4.min.js"></script>
 <script src="../js/jq-slideVerify.js"></script>
 <script src="../js/login.js"></script>
+<script>
+    var box1 = document.getElementById("box1");
+    var box2 = document.getElementById("box2");
+    var box3 = document.getElementById("box3");
+    var btn = document.getElementById("btn1");
+    btn.onclick = function(){
+        var uname = box1.value;
+        var pwd = box2.value;
+        if(uname=="" || pwd == ""){
+            return
+        }
+        var xhr = new XMLHttpRequest();
+        xhr.open("get","login.php?uname="+uname+"&upwd="+pwd,true);
+        xhr.send();
+        xhr.onreadystatechange = function(){
+            if(xhr.readyState == 4 && xhr.status == 200) {
+                var res = xhr.responseText;
+                if (res == 1) {
+                    alert("注册成功");
+                    window.location.href = "register.html";
+                } else if (res == 2) {
+                    alert("注册失败");
+                    window.location.href = "login.html";
+                } else {
+                        alert("用户名已存在,请重新注册");
+                }
+
+            }
+        }
+        }
+</script>
